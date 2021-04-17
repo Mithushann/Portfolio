@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Header from './Components/Header';
 import Side from './Components/Side';
+import Gallary from './Components/Gallary';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,6 +13,7 @@ ReactDOM.render(
    
     <App />
     <Side/>
+    <Gallary/>
   </React.StrictMode>,
   document.getElementById('root')
 );
