@@ -1,26 +1,38 @@
 import React from 'react'
 import Blue from './Assets/blue.JPG'
+import Boat from './Assets/boat.JPG'
+import Building from './Assets/building.JPG'
+import Yellow from './Assets/yellow.JPG'
+import Train from './Assets/train.JPG'
 import ImageGallery from 'react-image-gallery';
-
+import "react-image-gallery/styles/css/image-gallery.css";
 
 
 const images = [
     {
-      original: 'https://picsum.photos/id/1018/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1018/250/150/',
+      original:  Blue,
+      thumbnail: Blue,
     },
     {
-      original: 'https://picsum.photos/id/1015/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1015/250/150/',
+      original: Boat,
+      thumbnail:Boat,
     },
     {
-      original: 'https://picsum.photos/id/1019/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1019/250/150/',
+      original: Building,
+      thumbnail: Building,
+    },
+    {
+      original: Yellow,
+      thumbnail: Yellow,
+    },
+    {
+      original: Train,
+      thumbnail: Train,
     },
   ];
   
 function Gallary(){
-   return <ImageGallery items={images}/>
+   return <ImageGallery style={{width:'50%', height:'50%'}} items={images}/>
 }
     
       export default Gallary;
